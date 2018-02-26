@@ -12,7 +12,7 @@ const stores = {
 
 ReactDOM.render(
     <Provider {...stores} >
-        <App />
+        <App /> 
     </Provider>
 , document.getElementById('root'));
 registerServiceWorker();

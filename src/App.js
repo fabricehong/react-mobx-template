@@ -15,6 +15,8 @@ import stylusStyles from './Fourth.module.styl';
 
 import { observer, inject } from 'mobx-react';
 
+import DevTools from 'mobx-react-devtools';
+
 @inject('myStore')
 @observer
 class App extends Component {
@@ -35,6 +37,8 @@ class App extends Component {
           <div className="label"></div>
           <div className="label">{this.props.myStore.result}</div>
         </div>
+
+        <DevTools/>
       </div>
     );
   }
